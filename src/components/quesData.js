@@ -1,0 +1,17 @@
+export const quesData = [
+    {   id:0,
+        ques: "What are Canada's official languages?",
+        choices: ["A. English and Acadian", "B. French, English and Michif", "C. English and French", "D. French, English and Inuktitut"],
+        answ: 2
+    },
+    {   id:1,
+        ques: "What's the only official bilingual province in Canada?",
+        choices: ["A. Quebec", "B. Ontari", "C. New Brunswic", "D. Manitoba"],
+        answ: 2
+    },
+    {   id:2,
+        ques: "Which province has its own time zone?",
+        choices: ["A. British Columbia", "B. Newfoundland and Labrador", "C. Nova Scotia", "D. Nunavut"],
+        answ: 1
+    }
+]
