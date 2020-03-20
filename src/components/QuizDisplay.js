@@ -3,6 +3,7 @@ import {quesData} from './quesData';
 
 class QuizDisplay extends React.Component {
     state = {
+        total:this.props.total,
         currentQues: 0, userAnswer: null, btnDisabled:true, correct:0,
         question: '', choices: [],answer:''
     };
@@ -16,7 +17,7 @@ class QuizDisplay extends React.Component {
     };
     // update state
     componentDidUpdate(prevProps, prevState){
-        if (this.state.currentQues !== prevState.currentQues) {
+        if (this.state.currentQues !== prevState.currentQues && this.state.currentQues < this.state.total) {
             this.setState({
                 btnDisabled:true,
                 question:quesData[this.state.currentQues].ques,
@@ -25,7 +26,6 @@ class QuizDisplay extends React.Component {
             });
           }
     }
-
 
     selectAnswer = choice=>{
         this.setState({userAnswer:choice,btnDisabled:false})
@@ -39,34 +39,41 @@ class QuizDisplay extends React.Component {
             this.setState({correct:correct+1});
         }
         this.setState({currentQues:currentQues+1});
+       
     }
  
     render() {
-        const userAnswer = this.state.userAnswer;
-        return (
-            <div>
-                <form >
-                    <h3>{this.state.question} </h3>
-                    { this.state.choices.map((choice)=>{return (
-                        <div key={choice.charAt(0)} 
-                        onClick={()=>this.selectAnswer(choice)}
-                        className={`ui floating message ${userAnswer=== choice ? "selected" : null}`}
-                        >{choice}</div>
-                        )
-                   })}
-                </form>
-                <div disabled={this.state.btnDisabled} 
-                    className="small ui animated button" tabIndex="0" type="button" value="Next"
-                    onClick={this.nextQuestion}
-
-                >
-                    <div className="visible content">Next</div>
-                    <div className="hidden content">
-                        <i className="right arrow icon"></i>
+        const {userAnswer,currentQues,total}=this.state
+        if (currentQues <total){
+            return (
+                <div>
+                    <form >
+                        <h3 className="questions">{this.state.question} </h3>
+                        { this.state.choices.map((choice)=>{return (
+                            <div key={choice.charAt(0)} 
+                            onClick={()=>this.selectAnswer(choice)}
+                            className={`ui floating message ${userAnswer=== choice ? "selected" : null}`}
+                            >{choice}</div>
+                            )
+                       })}
+                    </form>
+                    <div disabled={this.state.btnDisabled} 
+                        className="small ui animated button" tabIndex="0" type="button" value="Next"
+                        onClick={this.nextQuestion}
+    
+                    >
+                        <div className="visible content">Next</div>
+                        <div className="hidden content">
+                            <i className="right arrow icon"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-        );
+            );
+
+        } else {
+            return <div>Result: {this.state.correct} </div>
+        }
+        
     };
 };
 

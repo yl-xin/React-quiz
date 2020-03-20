@@ -1,6 +1,31 @@
+.header{
+    background-image: url(./imgs/canada0.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 180px;
+}
+/* instruction */
+#instr {
+    margin: 10px auto;
+}
+#testNote{
+    border: gainsboro solid 1px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#testNote h4{
+    margin-bottom: 0px;
+    text-align: center;
+    background-color: gainsboro;
+}
+
 .selected{
-    background: linear-gradient( lightsteelblue, #9198e5)  !important;
+    background: linear-gradient(to right, lightsteelblue, #9198e5)  !important;
 }
 body{
     background-color:lightsteelblue;
+}
+
+h3{
+    text-align: center;
 }
