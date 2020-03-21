@@ -59,7 +59,7 @@ class QuizDisplay extends React.Component {
                        })}
                     </form>
                     <div disabled={this.state.btnDisabled} 
-                        className="small ui animated button" tabIndex="0" type="button" value="Next"
+                        className="small ui animated fluid button" tabIndex="0" type="button" value="Next"
                         onClick={this.nextQuestion}
     
                     >

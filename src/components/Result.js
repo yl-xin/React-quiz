@@ -32,10 +32,14 @@ function Result(props){
     };
 
     return (
-        <div className="ui container"> 
-            <p>You got {score} questions correct</p>
+        <div className="ui center aligned  grid"> 
+         <div class=" sixteen wide column">
+         <p>You got {score} questions correct</p>
             {feedback()}
             <button className="small ui primary button" type="button" >Check Answers</button>
+
+         </div>
+           
         </div>
     );
 }

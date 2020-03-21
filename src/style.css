@@ -20,7 +20,7 @@
 }
 
 .selected{
-    background: linear-gradient(to right, lightsteelblue, #9198e5)  !important;
+    background: linear-gradient(to right, lightsteelblue, white )  !important;
 }
 body{
     background-color:lightsteelblue;
@@ -28,4 +28,19 @@ body{
 
 h3{
     text-align: center;
+}
+
+footer{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    height: 40px;
+}
+
+#startbutton{
+    text-align: center;
+}
+
+form{
+    margin-bottom: 14px;
 }
