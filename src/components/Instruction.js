@@ -35,7 +35,7 @@ function Instruction(props) {
         </div>
 
         <div>
-            <button class="small ui primary button start" type="button"
+            <button className="small ui primary button start" type="button"
              onClick={()=>startQuiz()}>START QUIZ</button>
         </div>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import {quesData} from './quesData';
+import Result from './Result';
 
 class QuizDisplay extends React.Component {
     state = {
@@ -71,7 +72,7 @@ class QuizDisplay extends React.Component {
             );
 
         } else {
-            return <div>Result: {this.state.correct} </div>
+            return <Result score={ this.state.correct} total={this.state.total} />
         }
         
     };

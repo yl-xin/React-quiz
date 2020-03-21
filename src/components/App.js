@@ -9,25 +9,22 @@ class App extends React.Component{
     startQuiz = () => {
         this.setState({start:true})
     }
-    
-
-    render(){
+    renderContext(){
         const total = quesData.length;
         if (this.state.start) {
-            return (
-                <div className="ui container">
-                    <Header title="Discover Canada"/>
-                    <QuizDisplay total={total}/>
-                </div>
-            );
+            return <QuizDisplay total={total}/>;
         } else {
+            return <Instruction total={total} startQuiz={this.startQuiz}/>
+        }
+    }
+    render(){
             return (
                 <div className="ui container">
                     <Header title="Discover Canada"/>
-                    <Instruction total={total} startQuiz={this.startQuiz}/>
+                    {this.renderContext()}
+                    <footer>YL &copy Copyright 2020 March</footer>
                 </div>
             );
-        }
     };
 };
 
