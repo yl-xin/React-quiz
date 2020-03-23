@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/React-quiz/static/css/main.eac15407.chunk.css",
+    "main.js": "/React-quiz/static/js/main.bade709b.chunk.js",
+    "main.js.map": "/React-quiz/static/js/main.bade709b.chunk.js.map",
+    "runtime-main.js": "/React-quiz/static/js/runtime-main.b4a9a91d.js",
+    "runtime-main.js.map": "/React-quiz/static/js/runtime-main.b4a9a91d.js.map",
+    "static/js/2.2547c879.chunk.js": "/React-quiz/static/js/2.2547c879.chunk.js",
+    "static/js/2.2547c879.chunk.js.map": "/React-quiz/static/js/2.2547c879.chunk.js.map",
+    "index.html": "/React-quiz/index.html",
+    "precache-manifest.431a030272fa1b89eddec31c9f52194f.js": "/React-quiz/precache-manifest.431a030272fa1b89eddec31c9f52194f.js",
+    "service-worker.js": "/React-quiz/service-worker.js",
+    "static/css/main.eac15407.chunk.css.map": "/React-quiz/static/css/main.eac15407.chunk.css.map",
+    "static/js/2.2547c879.chunk.js.LICENSE.txt": "/React-quiz/static/js/2.2547c879.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/React-quiz/static/media/canada0.4f80ed3f.jpg",
+    "static/media/lose.gif": "/React-quiz/static/media/lose.67f066a0.gif",
+    "static/media/meh.gif": "/React-quiz/static/media/meh.2bee0975.gif",
+    "static/media/win.gif": "/React-quiz/static/media/win.f88a4768.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b4a9a91d.js",
+    "static/js/2.2547c879.chunk.js",
+    "static/css/main.eac15407.chunk.css",
+    "static/js/main.bade709b.chunk.js"
+  ]
+}
