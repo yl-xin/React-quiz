@@ -44,3 +44,11 @@ footer{
 form{
     margin-bottom: 14px;
 }
+
+/* result component */
+h3.ResultQues {
+    margin-top: 14px;
+}
+#reloadbtn{
+    margin-top: 14px;
+}

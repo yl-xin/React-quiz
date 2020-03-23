@@ -5,7 +5,7 @@ import Result from './Result';
 class QuizDisplay extends React.Component {
     state = {
         total:this.props.total,
-        currentQues: 0, userAnswer: null, btnDisabled:true, correct:0,
+        currentQues: 0, userAnswer: null, btnDisabled:true, correct:0,userAnswers:[],
         question: '', choices: [],answer:''
     };
     // initialize state 
@@ -32,10 +32,9 @@ class QuizDisplay extends React.Component {
         this.setState({userAnswer:choice,btnDisabled:false})
     }
     nextQuestion= ()=>{
-        // const userAnswer =this.state.userAnswer;
-        // const answer = this.state.answer;
-        // const correct = this.state.correct;
-        const {userAnswer,answer,correct,currentQues} =this.state;
+        const {userAnswer,answer,correct,currentQues,userAnswers} =this.state;
+        userAnswers[currentQues] = userAnswer;
+        // console.log(userAnswers);
         if (userAnswer===answer){
             this.setState({correct:correct+1});
         }
@@ -72,7 +71,7 @@ class QuizDisplay extends React.Component {
             );
 
         } else {
-            return <Result score={ this.state.correct} total={this.state.total} />
+            return <Result score={this.state.correct} total={this.state.total} userAnswers={this.state.userAnswers}/>
         }
         
     };
