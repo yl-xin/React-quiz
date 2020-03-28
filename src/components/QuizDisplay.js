@@ -57,7 +57,7 @@ class QuizDisplay extends React.Component {
                             )
                        })}
                     </form>
-                    <div disabled={this.state.btnDisabled} 
+                    <button disabled={this.state.btnDisabled} 
                         className="small ui animated fluid button" tabIndex="0" type="button" value="Next"
                         onClick={this.nextQuestion}
     
@@ -66,7 +66,7 @@ class QuizDisplay extends React.Component {
                         <div className="hidden content">
                             <i className="right arrow icon"></i>
                         </div>
-                    </div>
+                    </button>
                 </div>
             );
 
