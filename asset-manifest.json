@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/React-quiz/static/css/main.eac15407.chunk.css",
-    "main.js": "/React-quiz/static/js/main.bade709b.chunk.js",
-    "main.js.map": "/React-quiz/static/js/main.bade709b.chunk.js.map",
+    "main.js": "/React-quiz/static/js/main.77bad5c8.chunk.js",
+    "main.js.map": "/React-quiz/static/js/main.77bad5c8.chunk.js.map",
     "runtime-main.js": "/React-quiz/static/js/runtime-main.b4a9a91d.js",
     "runtime-main.js.map": "/React-quiz/static/js/runtime-main.b4a9a91d.js.map",
     "static/js/2.2547c879.chunk.js": "/React-quiz/static/js/2.2547c879.chunk.js",
     "static/js/2.2547c879.chunk.js.map": "/React-quiz/static/js/2.2547c879.chunk.js.map",
     "index.html": "/React-quiz/index.html",
-    "precache-manifest.431a030272fa1b89eddec31c9f52194f.js": "/React-quiz/precache-manifest.431a030272fa1b89eddec31c9f52194f.js",
+    "precache-manifest.73677e6ff3103813bb40a898d18fe065.js": "/React-quiz/precache-manifest.73677e6ff3103813bb40a898d18fe065.js",
     "service-worker.js": "/React-quiz/service-worker.js",
     "static/css/main.eac15407.chunk.css.map": "/React-quiz/static/css/main.eac15407.chunk.css.map",
     "static/js/2.2547c879.chunk.js.LICENSE.txt": "/React-quiz/static/js/2.2547c879.chunk.js.LICENSE.txt",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.b4a9a91d.js",
     "static/js/2.2547c879.chunk.js",
     "static/css/main.eac15407.chunk.css",
-    "static/js/main.bade709b.chunk.js"
+    "static/js/main.77bad5c8.chunk.js"
   ]
 }
